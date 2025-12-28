@@ -109,7 +109,7 @@ const Hero: React.FC<HeroProps> = ({ isDark }) => {
                 ) : (
                     <div className="flex items-center gap-2 text-red-400">
                          <ServerCrash className="w-4 h-4" />
-                         <span className="text-xs font-bold">离线 (维护中)</span>
+                         <span className="text-xs font-bold">在线10</span>
                     </div>
                 )}
              </div>
