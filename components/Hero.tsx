@@ -60,7 +60,7 @@ const Hero: React.FC<HeroProps> = ({ isDark }) => {
       {/* Background Image - 使用高质量星空背景，增强 StarShine 主题感 */}
       <div className="absolute inset-0 z-0">
         <img
-          src="https://images.unsplash.com/photo-1506318137071-a8e063b4b47a?q=80&w=2070&auto=format&fit=crop" 
+          src="https://t.alcy.cc/moez" 
           alt="Starry Sky"
           className="w-full h-full object-cover"
         />
