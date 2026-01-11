@@ -1,6 +1,4 @@
 <p align="center">
-  <img src="https://starshinemc.cn/logo.png" alt="StarShineMC Logo" width="120" />
-</p>
 
 <h1 align="center">StarShineMC 官网</h1>
 
@@ -30,5 +28,6 @@
 如有建议或问题，欢迎在 Issues 区留言，或通过QQ群与我们联系。
 
 <p align="center">
-  <a href="https://starshinemc.cn">🌟 StarShineMC 官网</a>
+  <a href="https://www.8bc.top">🌟 StarShineMC 官网</a>
 </p>
+
