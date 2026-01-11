@@ -2,7 +2,7 @@ import { Box, Globe, Github, Cpu, Sparkles, Zap } from 'lucide-react';
 import { TeamMember, Feature, SocialLink, NewsItem } from './types';
 
 export const SERVER_IP = "mc.8bc.top:40001";
-export const QQ_GROUP_URL = "https://qm.qq.com/cgi-bin/qm/qr?k=PLACEHOLDER"; 
+export const QQ_GROUP_URL = "https://qm.qq.com/q/FKll6UwOE8"; 
 
 export const NAV_LINKS = [
   { name: '特色', href: '#features' },
