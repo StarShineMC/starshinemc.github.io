@@ -26,7 +26,7 @@ const Hero: React.FC<HeroProps> = ({ isDark }) => {
         const port = parts[1] || '25565';
         
         // 使用 minebbs API，增加 type=je 确保正确解析 Java 版 1.21.4+ 协议
-        const url = `https://motd.minebbs.com/api/status?ip=${host}&port=${port}&stype=je`;
+        const url = `https://motd.minebbs.com/api/status?ip=${host}&port=${port}&stype=je&srv=true`;
         
         const response = await fetch(url);
         const data = await response.json();
