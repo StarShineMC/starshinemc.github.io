@@ -1,16 +1,14 @@
-import { Box, Hammer, Shield, Zap, Globe, Github, Gamepad2, Layers, Cpu, Sparkles } from 'lucide-react';
+import { Box, Globe, Github, Cpu, Sparkles, Zap } from 'lucide-react';
 import { TeamMember, Feature, SocialLink, NewsItem } from './types';
 
 export const SERVER_IP = "mc.8bc.top:40001";
-// Replace with your actual QQ Group link
-export const QQ_GROUP_URL = "https://qun.qq.com/universal-share/share?ac=1&authKey=va5lkxJMv0lrdHqs4bylz94QvKpAtSoWKYTaHImnxkM4ZV5lm2o%2FuU8neocpMHkn&busi_data=eyJncm91cENvZGUiOiIyMzcwOTk0MDciLCJ0b2tlbiI6InhnWk5qUVBxaWlHcE5CUERDMytCc2pZWlYxMmhUWG5hU3VTSUFTMEJyN1BMTGg5dGZLQ2lFakltbkZDWDJrQXEiLCJ1aW4iOiIzNDc3ODIyMDQ4In0%3D&data=fhXBVpicR28CT3OePRoQ5itT-KkMbbzUzjcZ0nwOF3QmowvABcRgjQkpKiJ_hfkBKP3tXU1antpzGUarV66J7w&svctype=4&tempid=h5_group_info"; 
+export const QQ_GROUP_URL = "https://qm.qq.com/cgi-bin/qm/qr?k=PLACEHOLDER"; 
 
 export const NAV_LINKS = [
-  { name: '特色', href: '#features' }, // Features
-  { name: '动态', href: '#news' },     // News
-  { name: '展望', href: '#future' },   // Future
-  { name: '团队', href: '#team' },     // Team
-  { name: '连接', href: '#connect' },  // Connect
+  { name: '特色', href: '#features' },
+  { name: '展望', href: '#future' },
+  { name: '团队', href: '#team' },
+  { name: '连接', href: '#connect' },
 ];
 
 export const TEAM_MEMBERS: TeamMember[] = [
@@ -28,31 +26,31 @@ export const TEAM_MEMBERS: TeamMember[] = [
   },
   {
     name: "Mu_xinf",
-    role: "创始人 / Founder & Partner",
+    role: "创始人/合伙人",
     avatar: "https://q.qlogo.cn/headimg_dl?dst_uin=3572115328&spec=640&img_type=jpg",
     description: "服务器创始人之一，负责整体规划与战略决策，带领团队不断发展壮大。"
   },
   {
     name: "huoda520",
-    role: "协管 / Moderator & Builder",
+    role: "协管/建筑师",
     avatar: "https://q.qlogo.cn/headimg_dl?dst_uin=2762686795&spec=640&img_type=jpg",
     description: "擅长建筑设计与服务器管理，协助维护服务器秩序并参与重要建筑项目。"
   },
   {
     name: "Qicwken",
-    role: "技术协助 / Technical Assistant",
+    role: "技术协助",
     avatar: "https://q.qlogo.cn/headimg_dl?dst_uin=3129666215&spec=640&img_type=jpg",
     description: "负责服务器技术支持与插件维护，保障服务器稳定运行与功能优化。"
   },
   {
     name: "冥",
-    role: "协管 / Moderator",
+    role: "协管",
     avatar: "https://q.qlogo.cn/headimg_dl?dst_uin=2188273644&spec=640&img_type=jpg",
     description: "协助管理服务器日常事务，维护社区秩序与玩家体验。"
   },
   {
     name: "QD_OS",
-    role: "协管 / Moderator",
+    role: "协管",
     avatar: "https://q.qlogo.cn/headimg_dl?dst_uin=1419863485&spec=640&img_type=jpg",
     description: "积极参与服务器管理与运营，协助处理玩家问题与活动组织。"
   }
@@ -84,7 +82,7 @@ export const FEATURES: Feature[] = [
 export const SOCIALS: SocialLink[] = [
   {
     name: "Bilibili",
-    url: "https://www.bilibili.com",
+    url: "https://space.bilibili.com",
     icon: Box 
   },
   {
@@ -96,9 +94,10 @@ export const SOCIALS: SocialLink[] = [
 
 export const NEWS_UPDATES: NewsItem[] = [
   {
-    date: "2025-12-01",
-    title: "星光 StarShine 正式启航",
-    category: "公告",
-    content: "经过两个月的精心筹备与内测，我们的高性能物理机服务器终于和大家见面了。感谢所有早期支持者的陪伴。",
+    date: "2024-12-24",
+    title: "建筑季开启：星光璀璨",
+    category: "活动",
+    content: "服务器目前处于建筑开发阶段，诚邀各位建筑师入驻，共同打造属于我们的星光主城。",
+    image: "https://images.unsplash.com/photo-1543589077-47d81606c1bf?q=80&w=800&auto=format&fit=crop"
   }
 ];
