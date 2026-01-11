@@ -20,18 +20,24 @@ const Hero: React.FC<HeroProps> = ({ isDark }) => {
   useEffect(() => {
     const fetchStatus = async () => {
       try {
-        // 使用 minebbs API 获取状态
-        const [ip, port] = SERVER_IP.split(':');
-        const url = `https://motd.minebbs.com/api/status?ip=${ip}${port ? `&port=${port}` : ''}`;
+        // 分割 IP 和 端口
+        const parts = SERVER_IP.split(':');
+        const host = parts[0];
+        const port = parts[1] || '25565';
+        
+        // 使用 minebbs API，增加 type=je 确保正确解析 Java 版 1.21.4+ 协议
+        const url = `https://motd.minebbs.com/api/status?ip=${host}&port=${port}&stype=je`;
+        
         const response = await fetch(url);
         const data = await response.json();
         
-        if (data.status === 'online') {
+        // 匹配示例中的 {"status":"online", "players":{"online":1,"max":69}, ...}
+        if (data && data.status === 'online') {
           setServerStatus({
             online: true,
-            players: data.players?.online || 0,
-            max: data.players?.max || 0,
-            version: data.version
+            players: typeof data.players?.online === 'number' ? data.players.online : 0,
+            max: typeof data.players?.max === 'number' ? data.players.max : 0,
+            version: data.version || '未知版本'
           });
         } else {
           setServerStatus({ online: false, players: 0, max: 0 });
@@ -51,11 +57,11 @@ const Hero: React.FC<HeroProps> = ({ isDark }) => {
 
   return (
     <section className="relative h-screen flex items-center justify-center overflow-hidden">
-      {/* Background Image */}
+      {/* Background Image - 使用高质量星空背景，增强 StarShine 主题感 */}
       <div className="absolute inset-0 z-0">
         <img
-          src="https://t.alcy.cc/moez" 
-          alt="Starry Night Background"
+          src="https://images.unsplash.com/photo-1506318137071-a8e063b4b47a?q=80&w=2070&auto=format&fit=crop" 
+          alt="Starry Sky"
           className="w-full h-full object-cover"
         />
         <div className="absolute inset-0 bg-slate-900/60 mix-blend-multiply"></div>
@@ -77,7 +83,7 @@ const Hero: React.FC<HeroProps> = ({ isDark }) => {
         </p>
 
         {/* Server Status Widget */}
-        <div className="mb-8 animate-fade-in-up delay-200">
+        <div className="mb-8 animate-fade-in-up delay-200 min-h-[50px] flex items-center">
              <div className="inline-flex items-center gap-4 bg-slate-900/60 backdrop-blur-md px-5 py-2.5 rounded-xl border border-white/10 shadow-lg hover:bg-slate-900/80 transition-all duration-300 group">
                 {loading ? (
                     <div className="flex items-center gap-2 text-gray-400">
