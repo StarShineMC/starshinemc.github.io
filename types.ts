@@ -19,10 +19,3 @@ export interface SocialLink {
   icon: React.ComponentType<any>;
 }
 
-export interface NewsItem {
-  date: string;
-  title: string;
-  category: string;
-  content: string;
-  image?: string;
-}

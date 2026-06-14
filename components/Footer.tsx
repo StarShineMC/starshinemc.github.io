@@ -22,10 +22,10 @@ const Footer: React.FC = () => {
           <div className="flex flex-col md:items-center">
             <h4 className="text-slate-900 dark:text-white font-bold mb-4">快速链接</h4>
             <ul className="space-y-2 text-slate-600 dark:text-gray-400 text-sm md:text-center">
-              <li><a href="#" className="hover:text-yellow-500 dark:hover:text-yellow-400 transition-colors">服务器规则</a></li>
-              <li><a href="#" className="hover:text-yellow-500 dark:hover:text-yellow-400 transition-colors">封禁查询</a></li>
-              <li><a href="#" className="hover:text-yellow-500 dark:hover:text-yellow-400 transition-colors">皮肤站</a></li>
-              <li><a href="#" className="hover:text-yellow-500 dark:hover:text-yellow-400 transition-colors">玩家社区</a></li>
+              <li><a href="https://wiki.8bc.top/" target="_blank" rel="noopener noreferrer" className="hover:text-yellow-500 dark:hover:text-yellow-400 transition-colors">服务器规则</a></li>
+              <li><a href="https://wiki.8bc.top/" target="_blank" rel="noopener noreferrer" className="hover:text-yellow-500 dark:hover:text-yellow-400 transition-colors">封禁查询</a></li>
+              <li><a href="https://wiki.8bc.top/" target="_blank" rel="noopener noreferrer" className="hover:text-yellow-500 dark:hover:text-yellow-400 transition-colors">服务器文档</a></li>
+              <li><a href="https://qm.qq.com/q/FKll6UwOE8" target="_blank" rel="noopener noreferrer" className="hover:text-yellow-500 dark:hover:text-yellow-400 transition-colors">玩家社区</a></li>
             </ul>
           </div>
 
@@ -57,7 +57,7 @@ const Footer: React.FC = () => {
 
         <div className="border-t border-slate-200 dark:border-white/5 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
           <p className="text-slate-500 dark:text-gray-500 text-xs">
-            &copy; 2024 StarShine Server. All rights reserved. Not affiliated with Mojang Studios.
+            &copy; 2026 StarShine Server. All rights reserved. Not affiliated with Mojang Studios.
           </p>
           <div className="flex gap-4 text-xs text-slate-500 dark:text-gray-500">
             <span>隐私政策</span>

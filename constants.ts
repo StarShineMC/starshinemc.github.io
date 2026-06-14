@@ -1,5 +1,5 @@
 import { Box, Globe, Github, Cpu, Sparkles, Zap } from 'lucide-react';
-import { TeamMember, Feature, SocialLink, NewsItem } from './types';
+import { TeamMember, Feature, SocialLink } from './types';
 
 export const SERVER_IP = "mc.8bc.top:40001";
 export const QQ_GROUP_URL = "https://qm.qq.com/q/FKll6UwOE8"; 
@@ -92,12 +92,3 @@ export const SOCIALS: SocialLink[] = [
   }
 ];
 
-export const NEWS_UPDATES: NewsItem[] = [
-  {
-    date: "2024-12-24",
-    title: "建筑季开启：星光璀璨",
-    category: "活动",
-    content: "服务器目前处于建筑开发阶段，诚邀各位建筑师入驻，共同打造属于我们的星光主城。",
-    image: "https://images.unsplash.com/photo-1543589077-47d81606c1bf?q=80&w=800&auto=format&fit=crop"
-  }
-];
