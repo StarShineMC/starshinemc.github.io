@@ -2,7 +2,6 @@ import React, { useEffect, useState } from 'react';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import About from './components/About';
-import News from './components/News';
 import Future from './components/Future';
 import Team from './components/Team';
 import Footer from './components/Footer';
@@ -41,7 +40,6 @@ function App() {
       <main>
         <Hero isDark={isDark} />
         <About />
-        <News />
         <Future />
         <Team />
       </main>

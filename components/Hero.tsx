@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Copy, Check, Wifi, Users, ServerCrash, MessageCircle } from 'lucide-react';
+import { Copy, Check, Wifi, Users, ServerCrash, MessageCircle, BookOpen } from 'lucide-react';
 import { SERVER_IP, QQ_GROUP_URL } from '../constants';
 
 interface HeroProps {
@@ -65,7 +65,6 @@ const Hero: React.FC<HeroProps> = ({ isDark }) => {
           className="w-full h-full object-cover"
         />
         <div className="absolute inset-0 bg-slate-900/60 mix-blend-multiply"></div>
-        <div className={`absolute inset-0 bg-gradient-to-t ${isDark ? 'from-[#0f172a]' : 'from-slate-50'} via-transparent to-transparent transition-colors duration-300`}></div>
       </div>
 
       {/* Content */}
@@ -147,7 +146,7 @@ const Hero: React.FC<HeroProps> = ({ isDark }) => {
             )}
           </button>
           
-          <a 
+          <a
             href={QQ_GROUP_URL}
             target="_blank"
             rel="noopener noreferrer"
@@ -155,6 +154,16 @@ const Hero: React.FC<HeroProps> = ({ isDark }) => {
           >
             <MessageCircle className="w-5 h-5 group-hover:text-cyan-400 transition-colors" />
             <span>官方玩家群</span>
+          </a>
+
+          <a
+            href="https://wiki.8bc.top/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="group flex-1 relative bg-white/10 text-white hover:bg-white/20 backdrop-blur-md font-bold py-3.5 px-8 rounded-full text-base border border-white/20 transition-all duration-300 transform hover:-translate-y-1 flex items-center justify-center gap-2 min-w-[200px]"
+          >
+            <BookOpen className="w-5 h-5 group-hover:text-yellow-400 transition-colors" />
+            <span>服务器文档</span>
           </a>
         </div>
         
