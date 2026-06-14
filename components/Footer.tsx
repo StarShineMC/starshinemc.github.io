@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { SOCIALS } from '../constants';
 import { Sparkles } from 'lucide-react';
 
@@ -23,7 +24,7 @@ const Footer: React.FC = () => {
             <h4 className="text-slate-900 dark:text-white font-bold mb-4">快速链接</h4>
             <ul className="space-y-2 text-slate-600 dark:text-gray-400 text-sm md:text-center">
               <li><a href="https://wiki.8bc.top/" target="_blank" rel="noopener noreferrer" className="hover:text-yellow-500 dark:hover:text-yellow-400 transition-colors">服务器规则</a></li>
-              <li><a href="https://wiki.8bc.top/" target="_blank" rel="noopener noreferrer" className="hover:text-yellow-500 dark:hover:text-yellow-400 transition-colors">封禁查询</a></li>
+              <li><Link to="/banlist" className="hover:text-yellow-500 dark:hover:text-yellow-400 transition-colors">封禁查询</Link></li>
               <li><a href="https://wiki.8bc.top/" target="_blank" rel="noopener noreferrer" className="hover:text-yellow-500 dark:hover:text-yellow-400 transition-colors">服务器文档</a></li>
               <li><a href="https://qm.qq.com/q/FKll6UwOE8" target="_blank" rel="noopener noreferrer" className="hover:text-yellow-500 dark:hover:text-yellow-400 transition-colors">玩家社区</a></li>
             </ul>
