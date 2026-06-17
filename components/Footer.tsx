@@ -57,9 +57,10 @@ const Footer: React.FC = () => {
         </div>
 
         <div className="border-t border-slate-200 dark:border-white/5 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
-          <p className="text-slate-500 dark:text-gray-500 text-xs">
-            &copy; 2026 StarShine Server. All rights reserved. Not affiliated with Mojang Studios.
-          </p>
+          <div className="flex flex-wrap justify-center gap-x-4 gap-y-1 text-xs text-slate-500 dark:text-gray-500">
+            <span>&copy; 2026 StarShine Server. Not affiliated with Mojang Studios.</span>
+            <a href="https://beian.miit.gov.cn/" target="_blank" rel="noopener noreferrer" className="hover:text-yellow-500 dark:hover:text-yellow-400 transition-colors">辽ICP备2025050671号-4</a>
+          </div>
           <div className="flex gap-4 text-xs text-slate-500 dark:text-gray-500">
             <span>隐私政策</span>
             <span>服务条款</span>

@@ -51,7 +51,7 @@ function App() {
             </>
           }
         />
-        <Route path="/banlist" element={<BanList />} />
+        <Route path="/banlist" element={<><BanList /><Footer /></>} />
       </Routes>
     </div>
   );
