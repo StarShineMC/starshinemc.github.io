@@ -9,8 +9,8 @@ interface BanEntry {
   date: string;
 }
 
-// TODO: 替换为真实 API 地址
-const API_URL = 'https://api.8bc.top/bans';
+// TODO: 部署时替换为生产地址
+const API_URL = import.meta.env.VITE_BAN_API || 'http://localhost:3001/api/bans';
 
 const BanList: React.FC = () => {
   const [bans, setBans] = useState<BanEntry[]>([]);
