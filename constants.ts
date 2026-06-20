@@ -37,12 +37,6 @@ export const TEAM_MEMBERS: TeamMember[] = [
     description: "擅长建筑设计与服务器管理，协助维护服务器秩序并参与重要建筑项目。"
   },
   {
-    name: "Qicwken",
-    role: "技术协助",
-    avatar: "https://q.qlogo.cn/headimg_dl?dst_uin=3129666215&spec=640&img_type=jpg",
-    description: "负责服务器技术支持与插件维护，保障服务器稳定运行与功能优化。"
-  },
-  {
     name: "冥",
     role: "协管",
     avatar: "https://q.qlogo.cn/headimg_dl?dst_uin=2188273644&spec=640&img_type=jpg",

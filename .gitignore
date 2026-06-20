@@ -23,3 +23,11 @@ server/data/
 *.njsproj
 *.sln
 *.sw?
+server/src/seed.js
+server/src/index.js
+server/src/db.js
+server/src/auth.js
+server/package.json
+server/.gitignore
+.gitignore
+server/package-lock.json
